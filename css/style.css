@@ -134,7 +134,7 @@ header.open .burger-button span:nth-child(3) {
     padding-right: 25px;
 }
 .image {
-    background-image: url(./assets/images/image-web-3-desktopr.jpg);
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -220,13 +220,13 @@ header.open .burger-button span:nth-child(3) {
     width: 150px;
 }
 .a {
-    background-image: url(./assets/images/image-retro-pcsr.jpg);
+    background-image: url(./assets/images/image-retro-pcs.jpg);
 }
 .b {
-    background-image: url(./assets/images/image-top-laptopsr.jpg);
+    background-image: url(./assets/images/image-top-laptops.jpg);
 }
 .c {
-    background-image: url(./assets/images/image-gaming-growthr.jpg);
+    background-image: url(./assets/images/image-gaming-growth.jpg);
 }
 .right-text {
     margin-left: 20px;
