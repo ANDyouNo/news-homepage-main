@@ -134,7 +134,8 @@ header.open .burger-button span:nth-child(3) {
     padding-right: 25px;
 }
 .image {
-    background-image: url(/assets/images/main.jpg);
+    /* background-image: url(/assets/images/main.jpg); */
+    background-color: brown;
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -220,13 +221,16 @@ header.open .burger-button span:nth-child(3) {
     width: 150px;
 }
 .a {
-    background-image: url(/assets/images/oldPc.jpg);
+    /* background-image: url(/assets/images/oldPc.jpg); */
+    background-color: brown;
 }
 .b {
-    background-image: url(/assets/images/keybord.webp);
+    /* background-image: url(/assets/images/keybord.webp); */
+    background-color: brown;
 }
 .c {
-    background-image: url(/assets/images/gamepad.jpeg);
+    /* background-image: url(/assets/images/gamepad.jpeg); */
+    background-color: brown;
 }
 .right-text {
     margin-left: 20px;
