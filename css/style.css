@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    --font-def: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 720px;
+    }  
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+.burger-button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative ;
+    z-index: 2;
+    left: 31vw;
+    top: 3vh;
+    background-color: white;
+}
+.burger-button span {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    left: 0px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+.burger-button span:nth-child(1) {
+    transform: translateY(-10px);
+}
+.burger-button span:nth-child(3) {
+    transform: translateY(10px);
+}
+header.open .burger-button span:nth-child(2) {
+    opacity: 0;
+}
+header.open .burger-button span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+header.open .burger-button span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav-link a {
+    padding-left: 4vw;
+    text-decoration: none;
+    color: var(--Very-dark-blue);
+    transition: 0.5s;
+}
+.nav-link a:hover {
+    color: var(--Soft-red);
+    transition: 0.5s;
+}
+.mobile-menu {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    left: 100vw;
+    width: 70vw;
+    display: none;
+    padding: 30px; 
+    transition: .5s;
+}
+.m-menu-link {
+    list-style-type: none;
+    z-index: 1;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.m-menu-link:first-child {
+    margin-top: 70px;
+}
+@media screen and (max-width: 500px) {
+    header.open .mobile-menu {
+        transform: translateX(-70vw);
+        transition: .5s;
+        display: flex;
+    }
+    .burger-button {
+        display: block;
+    }
+    .container {
+        max-width: 500px;
+    } 
+    .nav-link {
+        display: none;
+    } 
+}
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+}
+.horizontal-container {
+    display: flex;
+}
+.main-block {
+    flex: 1 0 65%;
+    padding-right: 25px;
+}
+.image {
+    background-image: url(/assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.text-info {
+    display: flex;
+}
+.left-sec {
+    flex: 1 0 40%;
+    margin-top: 20px;
+}
+.left-sec h1 {
+    font-weight: bold;
+    font-size: 54px;
+}
+.right-sec {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-sec button {
+    margin-top: 30px;
+    background-color: var(--Soft-red);
+    padding: 15px 50px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-right: 200px ;
+    transition: .5s;
+}
+.right-sec button:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+    transition: .5s;
+}
+.right-sec p {
+    line-height: 1.5;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.new-block {
+    background-color: var(--Very-dark-blue);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.new-block h1 {
+    color: var(--soft-orange);
+    font-size: 45px;
+}
+.new-d {
+}
+.news-link {
+    text-decoration: none;
+    color: white;
+    transform: .5s;
+}
+.news-link :hover {
+    color: var(--soft-orange);
+    transition: .5s;
+}
+.news-link h2 {
+    margin-bottom: 10px;
+}
+.mini-block {
+    display: flex;
+    padding: 30px 0;
+}
+.mini-card {
+    display: flex;
+    height: 140px;
+    padding: 5px;
+}
+.mini-card_img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+}
+.a {
+    background-image: url(/assets/images/image-retro-pcs.jpg);
+}
+.b {
+    background-image: url(/assets/images/image-top-laptops.jpg);
+}
+.c {
+    background-image: url(/assets/images/image-gaming-growth.jpg);
+}
+.right-text {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-text h1 {
+    color: var(--Grayish-blue);
+}
+.right-text a {
+    text-decoration: none;
+    color: var(--Very-dark-blue);
+    transition: .5s;
+}
+.right-text a:hover {
+    color: var(--Soft-red);
+    transition: .5s;
+}
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 720px;
+    }  
+    .mini-block {
+        flex-direction: column;
+    }
+    .horizontal-container {
+        flex-direction: column;
+    }
+    .main-block {
+        padding: 0;
+    }
+    .right-sec, .left-sec {
+        padding: 0 10px;
+    }
+    .left-sec h1 {
+        font-size: 50px;
+    }
+    .right-sec button {
+        margin: 30px 100px 0 0;
+    }
+    .new-block {
+        margin-top: 30px;
+        height: 400px;
+    }
+    .mini-card {
+        padding: 10px 0;
+        height: 150px;
+    }
+    .mini-card_img {
+        width: 100px;
+    }
+    .right-text {
+        margin-left: 10px ;
+    }
+}
+@media screen and (max-width: 500px) {
+    .text-info {
+        flex-direction: column;
+    }
+    .right-sec button {
+        margin: 30px 100px 0 0;
+    }
+    .new-block {
+        height: 500px;
+    }
+    .right-text {
+        margin-left: 5px ;
+    }
+    .right-text {
+        width: 200px;
+    }
+    .right-text h2 {
+        font-size: 20px;
+    }
+    .right-text p {
+        font-size: 14px;
+    }
+    .news-link h2 {
+        font-size: 22px;
+    }
+    .new-d p {
+        font-size: 14px;
+    }
+    
+}
