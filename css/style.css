@@ -135,7 +135,6 @@ header.open .burger-button span:nth-child(3) {
 }
 .image {
     background-image: url(../assets/images/image-web-3-desktop.jpg);
-    /* background-color: brown; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -222,15 +221,12 @@ header.open .burger-button span:nth-child(3) {
 }
 .a {
     background-image: url(../assets/images/image-retro-pcs.jpg);
-    /* background-color: brown; */
 }
 .b {
     background-image: url(../assets/images/image-top-laptops.jpg);
-    /* background-color: brown; */
 }
 .c {
     background-image: url(../assets/images/image-gaming-growth.jpg);
-    /* background-color: brown; */
 }
 .right-text {
     margin-left: 20px;
